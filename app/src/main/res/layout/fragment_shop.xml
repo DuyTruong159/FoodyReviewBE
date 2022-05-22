@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopFragment">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:indeterminateTint="#FF00"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF00"
+            android:orientation="horizontal"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="37sp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:padding="5sp"
+                android:paddingRight="10sp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Search ..."
+                android:padding="5sp"
+                android:textSize="20sp"
+                android:inputType="text"/>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="37sp"
+                android:layout_height="37sp"
+                android:src="@drawable/add"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstView_shop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10.0sp"
+            android:padding="10sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
